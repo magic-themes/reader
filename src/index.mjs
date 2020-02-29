@@ -85,8 +85,8 @@ export default (v = {}) => {
         padding: '5%',
         width: '100%',
         maxWidth: 'inherit',
-        width: '80vw',
-        height: '113vw',
+        width: '90vw',
+        height: '125vw',
         backgroundColor: v.pageBackground.dark,
         color: v.text.light,
         margin: '0 auto 2em',
@@ -155,7 +155,7 @@ export default (v = {}) => {
       '.Toc': {
         padding: '0',
         position: 'fixed',
-        left: '-180px',
+        left: '-197px',
         top: 0,
         width: '200px',
         height: '100vh',
@@ -242,9 +242,10 @@ export default (v = {}) => {
     [`@media screen and (min-width: ${v.widths.laptop})`]: {
       '.Page': {
         '> div': {
-          width: '55vw',
-          height: '77.7vw',
           fontSize: '1vw',
+          height: 'calc(125vw - 200px)',
+          margin: '0 calc(2vw + 200px) 2em',
+          width: 'calc(90vw - 200px)',
         },
       },
 
