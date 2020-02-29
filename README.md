@@ -1,0 +1,71 @@
+## @magic-themes/reader
+
+reader mode for [@magic](https://github.com/magic/core).
+
+used on [explain.webboot](https://explain.webboot.org)
+
+[demo](https://magic.github.io/reader)
+
+[![NPM version][npm-image]][npm-url]
+[![Linux Build Status][travis-image]][travis-url]
+[![Windows Build Status][appveyor-image]][appveyor-url]
+[![Coverage Status][coveralls-image]][coveralls-url]
+[![Greenkeeper badge][greenkeeper-image]][greenkeeper-url]
+[![Known Vulnerabilities][snyk-image]][snyk-url]
+
+[npm-image]: https://img.shields.io/npm/v/@magic-themes/reader.svg
+[npm-url]: https://www.npmjs.com/package/@magic-themes/reader
+[travis-image]: https://img.shields.io/travis/com/magic-themes/reader/master
+[travis-url]: https://travis-ci.com/magic-themes/reader
+[appveyor-image]: https://img.shields.io/appveyor/ci/magicthemes/reader/master.svg
+[appveyor-url]: https://ci.appveyor.com/project/magicthemes/reader/branch/master
+[coveralls-image]: https://coveralls.io/repos/github/magic-themes/reader/badge.svg
+[coveralls-url]: https://coveralls.io/github/magic-themes/reader
+[greenkeeper-image]: https://badges.greenkeeper.io/magic-themes/reader.svg
+[greenkeeper-url]: https://badges.greenkeeper.io/magic-themes/reader.svg
+[snyk-image]: https://snyk.io/test/github/magic-themes/reader/badge.svg
+[snyk-url]: https://snyk.io/test/github/magic-themes/reader
+
+#### install:
+```bash
+npm install --save --save-exact @magic-themes/reader
+```
+
+#### usage:
+
+##### declare usage:
+```javascript
+// config.mjs:
+
+module.exports = {
+  //... other config
+  THEME: 'reader',
+
+  // multiple themes
+  // we recommend using the @magic-themes/project as a base for the reader theme.
+  // THEME: ['project', 'reader']
+}
+```
+
+@magic will then import and use the theme automagically.
+
+##### overwrite
+
+you can overwrite any style in this theme with your own.
+
+create /assets/themes/reader/index.mjs, any css there will overwrite the theme css
+
+```javascript
+export default vars => ({
+  body: {
+    color: vars.colors.orange[900],
+  },
+})
+```
+
+#### changelog
+##### 0.0.1
+first release
+
+##### 0.0.2 - unreleased
+...
