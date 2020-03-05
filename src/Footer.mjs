@@ -59,7 +59,7 @@ export const style = vars => ({
     margin: '0 auto',
     maxWidth: vars.maxWidth,
     textAlign: 'left',
-    padding: '0 5%',
+    padding: '0',
   },
 
   '.Menus': {
@@ -85,6 +85,11 @@ export const style = vars => ({
       float: 'left',
       width: '30%',
       margin: '0 3% 0 0',
+    },
+  },
+  [`@media screen and (min-width: ${vars.widths.laptop})`]: {
+    '.Container': {
+      margin: `0 calc(2.5vw + ${vars.menuWidth})`,
     },
   },
 })
