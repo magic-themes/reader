@@ -261,12 +261,6 @@ export default (v = {}) => {
           },
         },
       },
-
-      '.Footer': {
-        '.Container': {
-          width: '55vw',
-        },
-      },
     },
   }
 }
