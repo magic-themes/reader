@@ -8,6 +8,8 @@ export const vars = {
     light: '#f0f0f0',
   },
 
+  menuWidth: '200px',
+
   link: {
     dark: '#8f6ab4',
     light: '#8f6ab4',
@@ -157,7 +159,7 @@ export default (v = {}) => {
         position: 'fixed',
         left: '-197px',
         top: 0,
-        width: '200px',
+        width: v.menuWidth,
         height: '100vh',
         backgroundColor: v.neutral,
         transition: `left ${v.fadeDuration}`,
@@ -243,9 +245,9 @@ export default (v = {}) => {
       '.Page': {
         '> div': {
           fontSize: '1vw',
-          height: 'calc(125vw - 200px)',
-          margin: '0 calc(2vw + 200px) 2em',
-          width: 'calc(90vw - 200px)',
+          height: `calc(125vw - ${v.menuWidth})`,
+          margin: `0 calc(2vw + ${v.menuWidth}) 2em`,
+          width: `calc(90vw - ${v.menuWidth})`,
         },
       },
 
