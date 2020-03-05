@@ -11,8 +11,8 @@ export const vars = {
   menuWidth: '200px',
 
   link: {
-    dark: '#8f6ab4',
-    light: '#8f6ab4',
+    dark: '#212121',
+    light: '#212121',
 
     hover: {
       dark: 'rebeccapurple',
