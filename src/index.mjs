@@ -88,7 +88,6 @@ export default (v = {}) => {
         width: '100%',
         maxWidth: 'inherit',
         width: '90vw',
-        height: '125vw',
         backgroundColor: v.pageBackground.dark,
         color: v.text.light,
         margin: '0 auto 2em',
