@@ -3,6 +3,6 @@ export default {
   WEB_ROOT: '/reader/',
   PUBLIC: 'docs',
   URL: 'magic-themes.github.io/reader',
-  THEME: ['project', 'reader'],
+  THEME: 'reader',
   HOIST: ['Gdpr', 'LightSwitch'],
 }
