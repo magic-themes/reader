@@ -1,14 +1,11 @@
 export const View = (props = {}, children = []) => {
   CHECK_PROPS(props, propTypes, 'Header')
 
-  const { logo, menu, title, ...state } = props
+  const { menu, title, ...state } = props
   const { root } = state
 
-  if (!logo && !menu && !logotext) {
-    return
-  }
-
   let { branding } = state
+
   if (!Array.isArray(branding)) {
     branding = [branding]
   }
@@ -74,9 +71,5 @@ export const style = vars => ({
 })
 
 export const propTypes = {
-  Header: [
-    { key: 'logo', type: 'string' },
-    { key: 'logotext', type: 'string' },
-    { key: 'menu', type: 'array' },
-  ],
+  Header: [{ key: 'menu', type: 'array' }],
 }
