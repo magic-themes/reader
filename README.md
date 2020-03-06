@@ -68,5 +68,8 @@ export default vars => ({
 ##### 0.0.1
 first release
 
-##### 0.0.2 - unreleased
+##### 0.0.2
+remove max height from pages. pages are as big as they have to be, this is not a pdf, fortunately :)
+
+##### 0.0.3 - unreleased
 ...
