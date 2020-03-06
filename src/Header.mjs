@@ -28,6 +28,7 @@ export const View = (props = {}, children = []) => {
 }
 
 export const style = vars => ({
+  margin: 0,
   padding: '.5em 0 0',
   width: '100%',
 
@@ -67,6 +68,11 @@ export const style = vars => ({
     margin: '0 auto',
     maxWidth: '1000px',
     padding: '0 5%',
+  },
+
+  [`@media screen and (min-width: ${vars.widths && vars.widths.laptop || '1024px'})`]: {
+    margin: '0 0 0 200px',
+    width: 'calc(100% - 200px)',
   },
 })
 
