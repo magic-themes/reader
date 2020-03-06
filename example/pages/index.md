@@ -5,11 +5,12 @@
 this is the
 [@magic-themes](https://github.com/magic-themes)
 reader theme.
+
 It is being used in [explain.webboot](https://explain.webboot.org)
 
 ### installation
 
-`npm install magic-themes/reader`
+`npm install @magic-themes/reader`
 
 ## usage
 
@@ -23,10 +24,13 @@ in /config.mjs
 export default {
   // ... other config
   THEME: 'reader',
+
+  // multiple themes:
+  THEME: ['reader', 'custom'],
 }
 ```
 
-# usage- customize
+### #usage- customize
 
 you can customize and add any kind of style
 
