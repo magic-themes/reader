@@ -71,5 +71,8 @@ first release
 ##### 0.0.2
 remove max height from pages. pages are as big as they have to be, this is not a pdf, fortunately :)
 
-##### 0.0.3 - unreleased
+##### 0.0.3
+remove dependence on @magic-themes/project, add Logo and state to theme.
+
+##### 0.0.4 - unreleased
 ...
