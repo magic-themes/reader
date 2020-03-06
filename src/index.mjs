@@ -271,7 +271,6 @@ export default (v = {}) => {
       '.Page': {
         '> div': {
           fontSize: '1vw',
-          height: `calc(125vw - ${v.menuWidth})`,
           margin: `0 calc(2vw + ${v.menuWidth}) 2em`,
           width: `calc(90vw - ${v.menuWidth})`,
         },
