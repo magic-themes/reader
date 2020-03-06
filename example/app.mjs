@@ -1,5 +1,8 @@
 export const state = {
   logotext: '@magic-themes/reader',
+
+  branding: ['@magic-themes', '/reader'],
+
   menu: [
     { to: '/#installation', text: 'installation' },
     {
@@ -11,31 +14,6 @@ export const state = {
       ],
     },
   ],
-
-  footer: {
-    one: {
-      title: '@magic',
-      before: ['jamstack generator', 'created by', 'Wizards & Witches'],
-    },
-    two: {
-      title: 'organizations',
-      menu: [
-        { to: 'https://github.com/magic', text: '@magic' },
-        { to: 'https://github.com/magic/core', text: '@magic/core' },
-        { to: 'https://github.com/magic-modules', text: '@magic-modules' },
-        { to: 'https://github.com/magic-libraries', text: '@magic-libraries' },
-        { to: 'https://github.com/magic-themes', text: '@magic-themes' },
-      ],
-    },
-    three: {
-      title: 'social links',
-      menu: [
-        { to: 'https://www.npmjs.com/org/magic', text: 'npm' },
-        { to: 'https://github.com/magic', text: 'github' },
-      ],
-    },
-  },
-
 
   vars: {
     pageBackground: {
