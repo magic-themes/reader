@@ -1,6 +1,33 @@
 export * as Burger from './Burger.mjs'
-export * as Header from './Header.mjs'
 export * as Footer from './Footer.mjs'
+export * as Header from './Header.mjs'
+export * as Logo from './Logo.mjs'
+
+export const state = {
+  footer: {
+    one: {
+      title: '@magic',
+      before: ['jamstack generator', 'created by', 'Wizards & Witches'],
+    },
+    two: {
+      title: 'organizations',
+      menu: [
+        { to: 'https://github.com/magic', text: '@magic' },
+        { to: 'https://github.com/magic/core', text: '@magic/core' },
+        { to: 'https://github.com/magic-modules', text: '@magic-modules' },
+        { to: 'https://github.com/magic-libraries', text: '@magic-libraries' },
+        { to: 'https://github.com/magic-themes', text: '@magic-themes' },
+      ],
+    },
+    three: {
+      title: 'social links',
+      menu: [
+        { to: 'https://www.npmjs.com/org/magic', text: 'npm' },
+        { to: 'https://github.com/magic', text: 'github' },
+      ],
+    },
+  },
+}
 
 export const vars = {
   pageBackground: {
