@@ -74,5 +74,10 @@ remove max height from pages. pages are as big as they have to be, this is not a
 ##### 0.0.3
 remove dependence on @magic-themes/project, add Logo and state to theme.
 
-##### 0.0.4 - unreleased
+##### 0.0.4
+* remove max height from pages on all screen sizes
+* Header now is centered both when menu is closed and when it is open
+
+
+##### 0.0.5 - unreleased
 ...
