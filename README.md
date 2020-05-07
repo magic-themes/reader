@@ -78,6 +78,8 @@ remove dependence on @magic-themes/project, add Logo and state to theme.
 * remove max height from pages on all screen sizes
 * Header now is centered both when menu is closed and when it is open
 
+##### 0.0.5
+bump required node version to 14.2.0
 
-##### 0.0.5 - unreleased
+##### 0.0.6 - unreleased
 ...
