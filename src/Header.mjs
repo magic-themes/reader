@@ -70,7 +70,7 @@ export const style = vars => ({
     padding: '0 5%',
   },
 
-  [`@media screen and (min-width: ${vars.widths && vars.widths.laptop || '1024px'})`]: {
+  [`@media screen and (min-width: ${(vars.widths && vars.widths.laptop) || '1024px'})`]: {
     margin: '0 0 0 200px',
     width: 'calc(100% - 200px)',
   },
