@@ -254,11 +254,14 @@ export default (v = {}) => {
       position: 'fixed',
       bottom: '0.5em',
       right: '0.5em',
+      zIndex: 1,
     },
 
-    '.Gdpr': {
+    '.NoSpy': {
       left: 'auto',
       right: '0.5em',
+      width: '1.5em',
+      height: '1.5em',
 
       '.ShowHide': {
         left: 'auto',
