@@ -81,5 +81,10 @@ remove dependence on @magic-themes/project, add Logo and state to theme.
 ##### 0.0.5
 bump required node version to 14.2.0
 
-##### 0.0.6 - unreleased
+##### 0.0.6
+* bug: lightswitch and cookie btn where invisible.
+* update dependencies
+
+
+##### 0.0.7 - unreleased
 ...
