@@ -1,12 +1,9 @@
 export const View = (props = {}, children = []) => {
   CHECK_PROPS(props, propTypes, 'Header')
 
-  const { menu, title, ...state } = props
-  const { root } = state
+  const { menu, url, hash, root, branding } = props
 
-  let { branding } = state
-
-  if (!Array.isArray(branding)) {
+  if (branding && !Array.isArray(branding)) {
     branding = [branding]
   }
 
@@ -16,13 +13,14 @@ export const View = (props = {}, children = []) => {
     div({ class: 'BrandContainer' }, [
       div([
         Logo({ root }),
-        branding && Link({ to: root, class: 'branding' }, [first, span(second), rest]),
+        first &&
+          Link({ to: root, class: 'branding' }, [first, second && span(second), rest && rest]),
       ]),
     ]),
     div({ class: 'Toc' }, [
       Burger(),
       h3({ title: 'Table of Contents' }, Link({ to: root }, 'ToC')),
-      Menu({ state, items: menu, collapse: false }),
+      Menu({ url, hash, root, menu, collapse: false }),
     ]),
   ])
 }
