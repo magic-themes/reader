@@ -93,5 +93,9 @@ bump required node version to 14.15.4
 * update dependencies
 * update Header api for @magic/core 0.0.105
 
-##### 0.0.9 - unreleased
+##### 0.0.9
+* update dependencies
+* add ThemeVars module to homepage
+
+##### 0.0.10 - unreleased
 ...
